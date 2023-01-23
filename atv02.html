@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso</title>
+
+</head>
+
+<body>
+    <h1>Quem é mais propenso a morrer de infarto.</h1>
+    <p><span id = "resul"></span></p>
+    <script>
+        let name1 = prompt("Digite o seu nome.");
+        let num01 = Number(prompt(name1 + " digite o seu peso."));
+        let name2 = prompt("Digite o seu nome.");
+        let num02 = Number(prompt(name2 + " digite o seu peso."));
+
+        if(num01 > num02){
+            resul = name1 + " é mais pesado que " + name2 + " .";
+        }else{
+            resul = name2 + " é mais pesado que  " + name1 + " .";
+        }
+        document.getElementById("resul").innerHTML = resul
+
+    </script>
+
+</body>
+</html>

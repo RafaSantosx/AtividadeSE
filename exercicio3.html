@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Premiado ou nao.</h1>
+    <p><span id="premiado-ou-nao"></span></p>
+
+    <script>
+        let fun = prompt("Digite o nome de um funcionario");
+        let meta = Number(prompt("Digite uma meta"));
+        let atingido = Number(prompt("Qual a meta atingida por " + fun));
+        let msg;
+
+        if (atingido > meta) {
+            msg = "Funcionario: " + fun + "</br> Meta: " + meta + "</br> Atingido: " + atingido + "</br>  " + fun + " foi premiado.";
+        }else{
+            msg = "Funcionario: " + fun + "</br> Meta: " + meta + "</br> Atingido: " + atingido + "</br> " + fun + " não foi premiado.";
+        }
+
+        document.getElementById("premiado-ou-nao").innerHTML = msg;
+    </script>
+</body>
+</html>

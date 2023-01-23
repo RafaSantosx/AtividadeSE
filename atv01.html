@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Qual valor é maior?</h1>
+    <p>O maior número é <span id = "msg"></span></p>
+
+    <script>
+        let num01 = Number(prompt("insira um valor."));
+        let num02 = Number(prompt("Insira um segundo valor."));
+
+         if (num01 > num02){
+            msg = num01
+         }else{
+            msg = num02
+         }
+            
+         document.getElementById("msg").innerHTML = msg
+         
+    </script>
+</body>
+</html>

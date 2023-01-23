@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>idade</title>
+</head>
+
+<body>
+    <h1>Quem é mais novo ?</h1>
+     <div id="resul"></div>
+      <div id="msg"></div>
+
+      <script>
+        let name1 = prompt("Digite o seu nome.");
+       let id01 = Number(prompt(name1 + " digite seu ano de nascimento."));
+      let name2 = prompt("Digite o seu nome.");
+     let id02 = Number(prompt(name2 + " digite seu ano de nascimento."));
+
+        if(id01 > id02){
+            resul = name1 + " é mais novo que " + name2
+        }else{
+            resul = name2 + " é mais novo que " + name1 
+        }
+        
+        msg = name1 + " tem " + (2023 - id01) + " anos, e " + name2 + " tem " + (2023 - id02) + " anos."
+        
+        document.getElementById("resul").innerHTML = resul
+        document.getElementById("msg").innerHTML = msg
+        
+        </script>
+    
+</body>
+</html>
